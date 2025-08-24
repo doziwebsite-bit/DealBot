@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="grid">
+    {% for p in posts %}
+      <article class="card">
+        <h2 style="margin:0 0 8px 0;"><a href="{{ p.href }}">{{ p.title }}</a></h2>
+        <p style="opacity:.85; margin:0 0 10px 0;">{{ p.summary }}</p>
+        <a class="btn" href="{{ p.href }}">Lire</a>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

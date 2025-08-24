@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <article class="card">
+    <h1 style="margin:0 0 8px 0;">{{ title }}</h1>
+    <p style="opacity:.9">{{ summary }}</p>
+    <p><a class="btn" href="{{ link }}" rel="nofollow sponsored">Voir l'offre / source ↗</a></p>
+    <p style="opacity:.6; font-size:14px;">Source: {{ source }} · Publié: {{ published }}</p>
+  </article>
+  <p style="margin-top:16px;"><a class="btn" href="../index.html">← Retour</a></p>
+{% endblock %}
